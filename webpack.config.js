@@ -2,8 +2,9 @@ const path = require('path');
 const CssMinimizerWebpackPligin = require('css-minimizer-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin =require('mini-css-extract-plugin')
-
+const MiniCssExtractPlugin =require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+var miniSVGDataURI = require('mini-svg-data-uri');
 
 module.exports = {
 	mode: 'development',
@@ -19,7 +20,7 @@ module.exports = {
 			use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
 		  },
 		  {
-			test: /\.(svg|png|gif|jpg)$/,
+			test: /\.(png|gif|jpg)$/,
 			exclude: /fonts/,
 			loader: 'file-loader',
 			options: {
@@ -27,7 +28,7 @@ module.exports = {
 			}
 		  },
 		  {
-			test: /\.(ttf|eot|woff|svg|woff2)$/,
+			test: /\.(ttf|eot|woff|woff2)$/,
 			use: {
 			  loader: "file-loader",
 			  options: {
@@ -36,6 +37,17 @@ module.exports = {
 			  }
 			}
 		  },
+          {
+            test: /\.svg$/,
+            type: 'asset/inline',
+            generator: {
+                dataUrl(content) {
+                  content = content.toString();
+                  return miniSVGDataURI(content);
+                }
+            },
+            use: 'svgo-loader'
+          },
 		  	{
 			test: /\.pug$/,
 			loader: 'pug-loader',
@@ -51,6 +63,12 @@ module.exports = {
         }),
 		new CssMinimizerWebpackPligin(),
 		new MiniCssExtractPlugin(),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: "components/header/img", to: "img" },
+              ],
+        }),
+        new CleanWebpackPlugin()
 
 	],
 	optimization: {

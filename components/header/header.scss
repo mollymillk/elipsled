@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+}
+menu {
+    margin-left: 133px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    > .header_item {
+        > .menu_item {
+            text-decoration: none;
+            color: #616161;
+            font-size: 18px;
+            line-height: 29px;
+        }
+    }
+}

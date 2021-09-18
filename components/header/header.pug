@@ -1,6 +1,8 @@
 header 
     .logo 
-    .menu 
-        p Контакты
-        p О нас
-        p блабла
+        img(src="img/logo.svg")
+    menu 
+       each menuItem in ["Главная", "Нам доверяют", "Фотографии", "Сертификаты", "Где нас найти?"]
+            .header_item
+                a.menu_item(href="http://bbro.jj")= menuItem
+            p 89152543992
