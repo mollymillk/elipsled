@@ -1,0 +1,42 @@
+{
+  "name": "elipsled",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack",
+    "serv": "static build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mollymillk/elipsled.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mollymillk/elipsled/issues"
+  },
+  "homepage": "https://github.com/mollymillk/elipsled#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.3.0",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "sass": "^1.41.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "pug": "^3.0.2",
+    "pug-loader": "^2.4.0"
+  }
+}
