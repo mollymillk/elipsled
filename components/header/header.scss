@@ -1,29 +1,37 @@
 header {
     display: flex;
     flex-direction: row;
-    margin-left: 50px;
+    margin-left: 260px;
+}
+.logo {
+    margin-top: 21;
+    > img {
+        height: 72%;
+        width: 80%;
+    }
 }
 menu {
-    margin-left: 115px;
+    margin-top: 21;
+    margin-left: 63px;
     padding-left: 0;
     display: flex;
     flex-direction: row;
-    gap: 100px;
+    gap: 61px;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
     > .header_item {
         > .menu_item {
             text-decoration: none;
             color: #616161;
-            font-size: 18px;
-            line-height: 29px;
+            font-size: 14px;
+            line-height: 25px;
         }
     }
     > .header_telephone {
         font-weight: bold;
         color: #000000;
-        line-height: 29px;
-        font-size: 18px;
+        line-height: 25px;
+        font-size: 14px;
         margin-top: 0;
-        padding-left: 17px;
+        padding-left: 35px;
     }
 }

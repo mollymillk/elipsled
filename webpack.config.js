@@ -20,13 +20,13 @@ module.exports = {
 			use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader'],
 		  },
 		  {
-			test: /\.(png|gif|jpg)$/,
-			exclude: /fonts/,
-			loader: 'file-loader',
-			options: {
-				name: '[name].[ext]'
-			}
-		  },
+		  test: /\.(?:ico|png|jpg|jpeg|svg|gif)$/,
+        loader: "file-loader",
+        options: {
+          outputPath: "assets/images",
+          name: "[name].[ext]"
+		}
+      },
 		  {
 			test: /\.(ttf|eot|woff|woff2)$/,
 			use: {
@@ -55,6 +55,7 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 { from: "components/header/img", to: "img" },
+				{from: "components/main_container/img", to: "img"}
               ],
         }),
         new CleanWebpackPlugin()
