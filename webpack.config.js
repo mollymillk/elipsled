@@ -37,17 +37,6 @@ module.exports = {
 			  }
 			}
 		  },
-          {
-            test: /\.svg$/,
-            type: 'asset/inline',
-            generator: {
-                dataUrl(content) {
-                  content = content.toString();
-                  return miniSVGDataURI(content);
-                }
-            },
-            use: 'svgo-loader'
-          },
 		  	{
 			test: /\.pug$/,
 			loader: 'pug-loader',

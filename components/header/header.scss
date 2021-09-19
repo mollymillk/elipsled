@@ -4,7 +4,8 @@ header {
     margin-left: 50px;
 }
 menu {
-    margin-left: 133px;
+    margin-left: 115px;
+    padding-left: 0;
     display: flex;
     flex-direction: row;
     gap: 100px;
@@ -16,5 +17,13 @@ menu {
             font-size: 18px;
             line-height: 29px;
         }
+    }
+    > .header_telephone {
+        font-weight: bold;
+        color: #000000;
+        line-height: 29px;
+        font-size: 18px;
+        margin-top: 0;
+        padding-left: 17px;
     }
 }
