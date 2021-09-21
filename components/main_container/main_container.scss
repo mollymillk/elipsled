@@ -1,11 +1,14 @@
 .main_container {
     height: 572px;
     margin-left: 260px;
+    display: flex;
+    flex-direction: row;
+    float: left;
     > .main_container_text {
         padding-top: 50px;
         float: left;
         > .main_container_text_heading {
-            width: 600px;
+            width: 530px;
             > p {
                 font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
                 font-size: 49px;
@@ -30,6 +33,7 @@
     }
 }
 .main_container_text_description {
+    max-width: 300px;
     padding-top: 11px;
     display: flex;
     flex-direction: column;
@@ -47,6 +51,7 @@
 }
 form.main_container_form {
     padding-top: 25px;
+    
     > input {
         height: 43px;
         width: 155px;
@@ -74,8 +79,19 @@ form.main_container_form {
 }
 .main_container_images {
     float: left;
-    > img {
-    height: 80%;
-    width: 80%;
+    width: 700px;
+    > img.cow {
+        position: absolute;
+        z-index: 1;
+        height: 451.88px;
+        width: 679px;
+        left: 810px;
+    }
+    > img.lamps {
+        position: absolute;
+        z-index: 2;
+        left: 695px;
+        width: 800px;
+        height: 592px;
     }
 }

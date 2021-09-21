@@ -2,7 +2,8 @@
     .company_info_headings {
         align-items: center;
         width: 670px;
-        padding-left: 25%;
+        padding-left: 29%;
+        margin-bottom: 10px;
     > h1 {
         text-align: center;
         font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
@@ -28,53 +29,79 @@
         text-align: center;
         font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
         font-size: 19px;
-        line-height: 31px;
+        line-height: 29px;
         margin: 0;
         color: #666666;
+        padding-right: 20px;
+        letter-spacing: 0.1px;
         > span {
             color: #ff9933;
         }
     }
 }
+.under_heading {
+    padding-top: 5px;
+}
 }
 .company_info_description {
-    margin-left: 25%;
-    margin-top: 40px;
+    margin-left: 20%;
+    margin-top: 30px;
 }
 .company_info_description_img {
     float: left;
+    min-width: 320px;
+    min-height: 400px;
+    padding-left: 110px;
+    padding-top: 5px;
+    > img {
+        height: 360.2px;
+        width: 319.2px;
+    }
 }
+
 .company_info_description_text {
     float: left;
     max-width: 350px;
+    padding-left: 23px;
+    padding-top: 3px;
     > p {
         margin: 0;
-        font-size: 16px;
+        font-size: 14px;
         font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
         color: black;
         text-align: center;
         line-height: 21px;
+        padding-left: 3px;
+        letter-spacing: 0.2px;
     }
 }
 .circle {
     margin-left: 150px;
     border-radius: 50%;
-    border: 2px solid #ff9933;
-    width: 30px;
-    height: 30px;
+    border: 1px solid #ff9933;
+    width: 15px;
+    height: 15px;
     align-items: center;
     text-align: center;
     > p {
         margin: 0;
-        padding-top: 25%;
+        // padding-top: 25%;
         font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
         color: #ff9933;
         font-weight: bold;
+        font-size: 12px;
+        
     }
 }
 .line {
-    border-left: 2px solid #ff9933;
-    width: 1px;
-    height: 10px;
-    margin-left: 166px;
+    border-left: 1px solid #ff9933;
+    width: 0px;
+    height: 15px;
+    margin-left: 158.5px;
+}
+p.text_under_number {
+    padding-top: 8px;
+}
+p.text_above_number {
+    padding-bottom: 10px;
 }
