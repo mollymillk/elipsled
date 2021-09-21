@@ -62,9 +62,11 @@ module.exports = {
 		new MiniCssExtractPlugin(),
         new CopyWebpackPlugin({
             patterns: [
-                { from: "components/header/img", to: "img" },
+                {from: "components/header/img", to: "img" },
 				{from: "components/main_container/img", to: "img"},
-				{from: "components/company_info/img", to: "img"}
+				{from: "components/company_info/img", to: "img"},
+				{from: "components/partners/img", to: "img"}
+
               ],
         }),
         new CleanWebpackPlugin(),
