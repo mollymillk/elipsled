@@ -1,6 +1,8 @@
 .partners {
     float: left;
-    margin-left: 256px;
+    margin-left: 17.1%;
+    margin-top: 56px;
+    height: 400px;
 }
 
 .partners_text {
@@ -13,10 +15,9 @@
     > h1 {
         text-align: center;
         font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-        font-size: 49px;
+        font-size: 48px;
         font-weight: bold;
         line-height: 59px;
-        letter-spacing: -0.5px;
         margin: 0;
         display: inline-block;
         position: relative;
@@ -25,8 +26,8 @@
         content: '';
         position: absolute;
         bottom: 20%;
-        left: 0;
-        width: 100%;
+        left: 1%;
+        width: 98.5%;
         height: 14%;
         background-color: orange;
         z-index: -1;
@@ -52,8 +53,8 @@
     float: left;
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    margin-top: 19px;
+    margin-left: 98px;
+    margin-top: 22px;
     gap: 55px;
 }
 .first_line, .second_line, .third_line {
